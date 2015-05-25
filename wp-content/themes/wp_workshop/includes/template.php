@@ -33,22 +33,10 @@ function bwrk_load_css()
          ),
 
          array(
-            'handle'	=> 'normalize',
-            'src'		=> get_template_directory_uri() . '/css/normalize.css',
+            'handle'	=> 'all',
+            'src'		=> get_template_directory_uri() . '/less/_all.less',
             'deps'	=> array(),
-         ),
-
-         /*array(
-            'handle'	=> 'foundation',
-            'src'		=> get_template_directory_uri() . '/css/foundation.css',
-            'deps'	=> array('normalize'),
-         ),*/
-
-         array(
-            'handle'	=> 'custom',
-            'src'		=> get_template_directory_uri() . '/css/custom.css',
-            'deps'	=> array('normalize'),
-         ),
+         )
 
       );
 
@@ -81,8 +69,14 @@ function bwrk_load_javascript()
       $files = array(
 
          array(
-            'handle'	=> 'app',
-            'src'		=> get_template_directory_uri() .'/js/app.js',
+            'handle'	=> 'less',
+            'src'		=> get_template_directory_uri() .'/js/lib/less.min.js',
+            'deps'	=> array(),
+         ),
+
+         array(
+            'handle'	=> 'jquery',
+            'src'		=> get_template_directory_uri() .'/js/lib/jquery.js',
             'deps'	=> array(),
          )
 
@@ -90,7 +84,7 @@ function bwrk_load_javascript()
 
       foreach( $files as $file ) {
 
-         wp_register_script( $file['handle'], $file['src'], $file['deps'], BWRK_TEMPLATE_VERSION );
+         wp_register_script( $file['handle'], $file['src'], $file['deps'], TEMPLATE_VERSION );
          wp_enqueue_script( $file['handle'] );
 
       }

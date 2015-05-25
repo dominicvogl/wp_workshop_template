@@ -9,6 +9,7 @@ define('TEMPLATE_VERSION', 1.0); // Version des Templates (wird für den Dateiim
 
 // Liste mit den Namen der einzubindenen Dateien
 $files = array(
+   'filter',
    'template',
    'loops'
 );

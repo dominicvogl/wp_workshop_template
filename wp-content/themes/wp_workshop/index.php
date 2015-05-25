@@ -9,11 +9,15 @@ if(have_posts()) {
 
       <div class="row">
 
-         <div class="columns small-12 medium-8">
+         <div class="column small-12 medium-6 large-4">
 
-            <h3><?php the_title(); ?></h3>
-            <?php the_content();?>
-            <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>" class="button">Zum Artikel</a>
+            <div class="inner-content">
+
+               <h3><?php the_title(); ?></h3>
+               <?php the_content('');?>
+               <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>" class="button">Zum Artikel</a>
+
+            </div>
 
          </div>
 
