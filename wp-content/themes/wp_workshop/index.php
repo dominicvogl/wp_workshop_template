@@ -14,6 +14,7 @@ if(have_posts()) {
             <div class="inner-content">
 
                <h3><?php the_title(); ?></h3>
+               <span class="post-date"><?php the_date(); ?></span>
                <?php the_content('');?>
                <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>" class="button">Zum Artikel</a>
 

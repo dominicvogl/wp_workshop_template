@@ -1,6 +1,6 @@
 <?php
 
-if(!is_admin()) {
+if (!is_admin()) {
    add_filter('style_loader_tag', 'enqueue_less_styles', 5, 2);
 }
 
