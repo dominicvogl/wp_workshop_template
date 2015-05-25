@@ -93,12 +93,28 @@ h3 {
 // Allgemeine Elemente
 //
 
+.module {
+   padding: (@grid-gutter-width * 2) 0;
+}
+
 .inner-content {
-   padding: @grid-gutter-width/2;
+   padding: @grid-gutter-width;
    background: #fff;
    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
 }
 
+//
+// Images
+//
+
+.image-round {
+   border-radius: 50%;
+   overflow: hidden;
+
+   img {
+      display: block;
+   }
+}
 
 //
 // Beiträge

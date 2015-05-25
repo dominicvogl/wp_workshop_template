@@ -10,11 +10,22 @@
 .row {
    max-width: @row-max-width;
    margin: 0 auto;
+   overflow: hidden;
+
+   img {
+      max-width: 100%;
+      height: auto;
+   }
 
    .column {
-      padding: 0 (@grid-gutter-width / 2);
-      margin-bottom: (@grid-gutter-width / 2);
+      position: relative;
+      padding-left: (@grid-gutter-width / 2);
+      padding-right: (@grid-gutter-width / 2);
       float: left;
+   }
+
+   .row {
+      margin: 0 -(@grid-gutter-width / 2);
    }
 
    @media (max-width: @small) {
@@ -23,10 +34,22 @@
       }
    }
 
-   @media (min-width: @medium) and (max-width: @large) {
+   @media (min-width: @medium) {
       .medium-6 {
          width: 50%;
+      }
 
+      .medium-8 {
+         width: 66.666%
+      }
+
+      .medium-4 {
+         width: 33.333%
+      }
+   }
+
+   @media (min-width: @medium) and (max-width: @large) {
+      .medium-6 {
          &:nth-child(2n+1) {
             clear: left;
          }
