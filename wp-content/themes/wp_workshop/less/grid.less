@@ -17,15 +17,16 @@
       height: auto;
    }
 
+   .row {
+      margin: 0 -(@grid-gutter-width / 2);
+   }
+
    .column {
       position: relative;
       padding-left: (@grid-gutter-width / 2);
       padding-right: (@grid-gutter-width / 2);
+      margin-bottom: @grid-gutter-width;
       float: left;
-   }
-
-   .row {
-      margin: 0 -(@grid-gutter-width / 2);
    }
 
    @media (max-width: @small) {

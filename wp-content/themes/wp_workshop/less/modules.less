@@ -1,0 +1,36 @@
+//
+// modules.less
+// ----------------------------------------------------------------
+
+//
+// Basic Module
+//
+
+.module {
+   padding: (@grid-gutter-width * 2) 0;
+}
+
+//
+// Module Header Image
+//
+
+.module-header-image {
+   width: 100%;
+   position: relative;
+
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      z-index: 10;
+   }
+
+   .header-post {
+      position: absolute;
+      bottom: 60px;
+      width: 50%;
+      left: 0;
+      z-index: 15;
+
+   }
+}
