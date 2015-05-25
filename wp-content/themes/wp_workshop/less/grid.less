@@ -12,7 +12,8 @@
    margin: 0 auto;
 
    .column {
-      padding: @grid-gutter-width;
+      padding: 0 (@grid-gutter-width / 2);
+      margin-bottom: (@grid-gutter-width / 2);
       float: left;
    }
 
@@ -25,12 +26,20 @@
    @media (min-width: @medium) and (max-width: @large) {
       .medium-6 {
          width: 50%;
+
+         &:nth-child(2n+1) {
+            clear: left;
+         }
       }
    }
 
    @media (min-width: @large) {
       .large-4 {
          width: 33.333%;
+
+         &:nth-child(3n+1) {
+            clear: left;
+         }
       }
    }
 }

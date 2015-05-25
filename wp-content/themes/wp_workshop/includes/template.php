@@ -28,7 +28,7 @@ function bwrk_load_css()
 
          array(
             'handle'	=> 'normalize',
-            'src'		=> 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700',
+            'src'		=> 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:400,700',
             'deps'	=> array(),
          ),
 
