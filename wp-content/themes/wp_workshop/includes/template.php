@@ -28,21 +28,27 @@ function bwrk_load_css()
 
          array(
             'handle'	=> 'normalize',
-            'src'		=> get_template_directory_uri() . '/css/normalize.css',
+            'src'		=> 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700',
             'deps'	=> array(),
          ),
 
          array(
+            'handle'	=> 'normalize',
+            'src'		=> get_template_directory_uri() . '/css/normalize.css',
+            'deps'	=> array(),
+         ),
+
+         /*array(
             'handle'	=> 'foundation',
             'src'		=> get_template_directory_uri() . '/css/foundation.css',
             'deps'	=> array('normalize'),
-         ),
+         ),*/
 
          array(
-            'handle'	=> 'foundation',
+            'handle'	=> 'custom',
             'src'		=> get_template_directory_uri() . '/css/custom.css',
-            'deps'	=> array('foundation'),
-         )
+            'deps'	=> array('normalize'),
+         ),
 
       );
 
