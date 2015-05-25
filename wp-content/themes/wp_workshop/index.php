@@ -4,6 +4,7 @@ get_header();
 
 if (have_posts()) {
 
+   // Zeige die letzten Newsbeiträge an
    echo '<div class="row">';
 
    while (have_posts()) {

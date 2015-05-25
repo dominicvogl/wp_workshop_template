@@ -16,6 +16,14 @@ add_action('wp_head', 'bwrk_add_favicons');
 
 
 //
+// Mache Vorschaubilder bei Beiträgen und Seiten verfügbar
+// ----------------------------------------------------------------------------------------
+
+add_theme_support( 'post-thumbnails' );
+
+
+
+//
 // Load CSS files
 // ----------------------------------------------------------------------------------------
 
@@ -77,7 +85,7 @@ function bwrk_load_javascript()
          array(
             'handle'	=> 'jquery',
             'src'		=> get_template_directory_uri() .'/js/lib/jquery.js',
-            'deps'	=> array(),
+            'deps'	=> array('less'),
          )
 
       );
