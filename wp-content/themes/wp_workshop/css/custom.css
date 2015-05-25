@@ -1,0 +1,37 @@
+/*
+* custom.css
+* Autor: Dominic Vogl
+*/
+
+/*
+* HTML, Body
+*/
+
+body {
+    background: #f0f0f0 url("../assets/lined_paper.png") repeat;
+    color: #1d1d1d;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+/*
+* Überschriften
+*/
+
+h1, h2, h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
