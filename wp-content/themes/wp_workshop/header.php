@@ -15,5 +15,3 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<!-- Module, Navigation + Logo -->
