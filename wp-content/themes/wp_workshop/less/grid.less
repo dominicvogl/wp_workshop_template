@@ -1,0 +1,36 @@
+/*
+* grid.less
+* Autor: Dominic Vogl
+*/
+
+/*
+* Das Raster (responsive Grid)
+*/
+
+.row {
+   max-width: @row-max-width;
+   margin: 0 auto;
+
+   .column {
+      padding: @grid-gutter-width;
+      float: left;
+   }
+
+   @media (max-width: @small) {
+      .small-12 {
+         width: 100%;
+      }
+   }
+
+   @media (min-width: @medium) and (max-width: @large) {
+      .medium-6 {
+         width: 50%;
+      }
+   }
+
+   @media (min-width: @large) {
+      .large-4 {
+         width: 33.333%;
+      }
+   }
+}

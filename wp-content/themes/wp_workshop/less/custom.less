@@ -1,0 +1,85 @@
+/*
+* custom.less
+* Autor: Dominic Vogl
+*/
+
+/*
+* HTML, Body
+*/
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+
+body {
+   background: @color-background url("../assets/lined_paper.png") repeat;
+   color: @color-text;
+   font-size: @font-base-size;
+   font-family: @font-base-family;
+   font-weight: 400;
+}
+
+//
+// Verlinkungen
+//
+
+a {
+   color: @color-base;
+   text-decoration: none;
+
+   &:hover,
+   &:focus,
+   &:active {
+      text-decoration: none;
+   }
+}
+
+//
+// Buttons
+//
+
+.button {
+   display: inline-block;
+   background: @color-base;
+   color: #fff;
+   padding: 10px 15px;
+}
+
+//
+// Überschriften
+//
+
+h1, h2, h3 {
+   font-family: @font-headline-family;
+   font-weight: 500;
+   color: @color-base;
+}
+
+h1 {
+   font-size: 32px;
+}
+
+h2 {
+   font-size: 26px;
+}
+
+h3 {
+   font-size: 22px;
+}
+
+
+//
+// Allgemeine Elemente
+//
+
+.inner-content {
+   padding: @grid-gutter-width/2;
+   background: #fff;
+   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
+}
