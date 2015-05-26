@@ -19,6 +19,8 @@ $exclude_posts = array();
 // Prüfe ob ein Array zurückgeliefert wird
 if( is_array($posts) ) {
 
+   echo '<div class="slick-slider">';
+
    // Löse den Array auf und rendere jeden Post
    foreach($posts as $post) {
       setup_postdata($post);
@@ -27,7 +29,7 @@ if( is_array($posts) ) {
       $exclude_posts[] = $post->ID;
       ?>
 
-      <div class="module-header-image">
+      <div class="slick-slider-slide module-header-image">
          <?php echo get_the_post_thumbnail($post->ID, 'header-image'); ?>
 
          <div class="header-post">
@@ -41,6 +43,8 @@ if( is_array($posts) ) {
 
    <?php
    }
+
+   echo '</div>';
 
    // Setze den Wordpress Query / Loop zurück
    wp_reset_postdata();
@@ -129,7 +133,7 @@ if( !empty($post) ) {
    </div>
 
    <?php
-   
+
    // Setze den Wordpress Query / Loop zurück
    wp_reset_postdata();
 }
