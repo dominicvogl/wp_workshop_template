@@ -27,7 +27,7 @@ add_theme_support( 'post-thumbnails' );
 // Mache Vorschaubilder bei Beiträgen und Seiten verfügbar
 // ----------------------------------------------------------------------------------------
 
-add_image_size( $name, $width, $height, $crop );
+add_image_size( 'header-image', 1500, 800, true );
 
 
 //
