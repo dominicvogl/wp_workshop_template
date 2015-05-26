@@ -4,7 +4,6 @@
       <div class="column small-12">
          <div class="inner-content">
             <?php
-
             wp_nav_menu(
                array(
                   'container' => '',
@@ -13,7 +12,6 @@
                   'link_after' => '</span>'
                )
             );
-
             ?>
          </div>
       </div>

@@ -20,3 +20,22 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="module-header">
+   <div class="row">
+      <div class="column small-12">
+         <div class="inner-content">
+            <?php
+            wp_nav_menu(
+               array(
+                  'container' => '',
+                  'menu_class' => 'header-menu',
+                  'link_before' => '<span class="button">',
+                  'link_after' => '</span>'
+               )
+            );
+            ?>
+         </div>
+      </div>
+   </div>
+</div>
