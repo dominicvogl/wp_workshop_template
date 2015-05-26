@@ -11,7 +11,7 @@ function bwrk_add_favicons()
    echo '<link rel="Shortcut Icon" type="image/png" href="'.$url.'/img/favicon.png" />';
 }
 
-add_action('wp_head', 'bwrk_add_favicons');
+// add_action('wp_head', 'bwrk_add_favicons');
 
 
 
