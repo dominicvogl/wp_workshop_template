@@ -10,18 +10,25 @@ $args = array(
    'category__in' => array(3)
 );
 
-// Die Argument an die Funktion übergeben und aus der Datenbank holen
+// Lade die anhand der übergebenen Parametern die passenden Beiträge aus der Datenbank
 $posts = get_posts($args);
+
+// Definieren einen leeren Array um später etwas hineinzuspeichern
 $exclude_posts = array();
 
-if( !empty($posts) ) {
-   foreach($posts as $post) {
+// Prüfe ob ein Array zurückgeliefert wird
+if( is_array($posts) ) {
 
+   // Löse den Array auf und rendere jeden Post
+   foreach($posts as $post) {
+      setup_postdata($post);
+
+      // Speichere die ID's der Beiträge
       $exclude_posts[] = $post->ID;
-   ?>
+      ?>
 
       <div class="module-header-image">
-         <?php echo get_the_post_thumbnail($post->ID); ?>
+         <?php echo get_the_post_thumbnail($post->ID, 'header-image'); ?>
 
          <div class="header-post">
             <div class="inner-content">
@@ -34,10 +41,14 @@ if( !empty($posts) ) {
 
    <?php
    }
+
+   // Setze den Wordpress Query / Loop zurück
    wp_reset_postdata();
 }
 
-// Wähle die nötigen Argumente um weitere drei Newsbeiträge zu laden, der erste aus dem Header wird aber ausgelassen
+
+
+// Wähle die nötigen Argumente um weitere drei Newsbeiträge zu laden, die Hightlights aus dem Header werden ausgeschlossen
 $args = array(
    'post_type' => 'post',
    'orderby' => 'DESC',
@@ -45,14 +56,18 @@ $args = array(
    'post__not_in' => $exclude_posts
 );
 
+// Lade die anhand der übergebenen Parametern die passenden Beiträge aus der Datenbank
 $posts = get_posts($args);
 
+
+// Prüfe ob ein Array zurückgeliefert wird
 if( is_array($posts) ) {
 
-   // Zeige die letzten Newsbeiträge an
+   // Rendere HTML für die News Beiträge
    echo '<div class="module">';
    echo '<div class="row">';
 
+   // Löse den Array auf und rendere jeden Post
    foreach($posts as $post) {
       setup_postdata($post);
       ?>
@@ -72,18 +87,20 @@ if( is_array($posts) ) {
 
    <?php
 
-   } // foreach Ende
+   }
 
    echo '</div>';
    echo '</div>';
 
+   // Setze den Wordpress Query / Loop zurück
    wp_reset_postdata();
 }
 
 
-// Zeige den Inhalt der Seite "Über mich an"
+// Laden den Inhalt der Seite "Über mich" (Dieser hat die ID "2") aus der Datenbank
 $post = get_post(2);
 
+// Prüfe ob die Variable NICHT leer ist
 if( !empty($post) ) {
    setup_postdata($post);
    ?>
@@ -95,18 +112,14 @@ if( !empty($post) ) {
             <div class="row">
 
                <div class="column medium-8">
-
                   <h2><?php the_title(); ?></h2>
                   <?php the_content(); ?>
-
                </div>
 
                <div class="column medium-4">
-
                   <div class="image-round">
                      <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
                   </div>
-
                </div>
 
             </div>
@@ -116,8 +129,9 @@ if( !empty($post) ) {
    </div>
 
    <?php
+   
+   // Setze den Wordpress Query / Loop zurück
    wp_reset_postdata();
 }
-
 
 get_footer();
