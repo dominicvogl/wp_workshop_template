@@ -30,11 +30,11 @@ if( is_array($posts) ) {
       ?>
 
       <div class="slick-slider-slide module-header-image">
-         <?php echo get_the_post_thumbnail($post->ID, 'header-image'); ?>
+         <?php the_post_thumbnail('header-image'); ?>
 
          <div class="header-post">
             <div class="inner-content">
-               <h2><?php the_title(); ?></h2>
+               <h2><a href="<?php echo get_permalink($post->ID); ?>"><?php the_title(); ?></a></h2>
                <span class="post-date"><?php echo get_the_date('d.m.Y', $post->ID); ?></span>
             </div>
          </div>

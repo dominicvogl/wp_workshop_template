@@ -24,10 +24,20 @@ add_theme_support( 'post-thumbnails' );
 
 
 //
-// Mache Vorschaubilder bei Beiträgen und Seiten verfügbar
+// Füge eine neue Bildschirmgröße hinzu
 // ----------------------------------------------------------------------------------------
 
 add_image_size( 'header-image', 1500, 800, true );
+
+//
+// Registriere ein Menü
+// ----------------------------------------------------------------------------------------
+
+add_action( 'after_setup_theme', 'register_my_menu' );
+
+function register_my_menu() {
+   register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
+}
 
 
 //
