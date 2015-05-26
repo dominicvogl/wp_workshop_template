@@ -93,6 +93,18 @@ function bwrk_load_javascript()
             'handle'	=> 'jquery',
             'src'		=> get_template_directory_uri() .'/js/lib/jquery.js',
             'deps'	=> array('less'),
+         ),
+
+         array(
+            'handle'	=> 'slick',
+            'src'		=> get_template_directory_uri() .'/js/lib/slick.js',
+            'deps'	=> array('jquery'),
+         ),
+
+         array(
+            'handle'	=> 'custom',
+            'src'		=> get_template_directory_uri() .'/js/custom.js',
+            'deps'	=> array('jquery'),
          )
 
       );
