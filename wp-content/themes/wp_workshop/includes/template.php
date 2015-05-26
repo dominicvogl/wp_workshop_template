@@ -19,8 +19,15 @@ add_action('wp_head', 'bwrk_add_favicons');
 // Mache Vorschaubilder bei Beiträgen und Seiten verfügbar
 // ----------------------------------------------------------------------------------------
 
+
 add_theme_support( 'post-thumbnails' );
 
+
+//
+// Mache Vorschaubilder bei Beiträgen und Seiten verfügbar
+// ----------------------------------------------------------------------------------------
+
+add_image_size( $name, $width, $height, $crop );
 
 
 //

@@ -6,37 +6,43 @@ get_header();
 $args = array(
    'post_type' => 'post',
    'orderby' => 'DESC',
-   'posts_per_page' => 1
+   'posts_per_page' => 4,
+   'category__in' => array(3)
 );
 
 // Die Argument an die Funktion übergeben und aus der Datenbank holen
 $posts = get_posts($args);
+$exclude_posts = array();
 
 if( !empty($posts) ) {
+   foreach($posts as $post) {
+
+      $exclude_posts[] = $post->ID;
    ?>
 
-   <div class="module-header-image">
-      <?php echo get_the_post_thumbnail($posts[0]->ID); ?>
+      <div class="module-header-image">
+         <?php echo get_the_post_thumbnail($post->ID); ?>
 
-      <div class="header-post">
-         <div class="inner-content">
-            <h2><?php the_title(); ?></h2>
-            <span class="post-date"><?php echo get_the_date('d.m.Y', $posts[0]->ID); ?></span>
+         <div class="header-post">
+            <div class="inner-content">
+               <h2><?php the_title(); ?></h2>
+               <span class="post-date"><?php echo get_the_date('d.m.Y', $post->ID); ?></span>
+            </div>
          </div>
+
       </div>
 
-   </div>
-
    <?php
+   }
    wp_reset_postdata();
 }
 
-
+// Wähle die nötigen Argumente um weitere drei Newsbeiträge zu laden, der erste aus dem Header wird aber ausgelassen
 $args = array(
    'post_type' => 'post',
    'orderby' => 'DESC',
    'posts_per_page' => 3,
-   'offset' => 1
+   'post__not_in' => $exclude_posts
 );
 
 $posts = get_posts($args);
