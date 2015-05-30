@@ -54,11 +54,12 @@ p {
 
 .button {
    display: inline-block;
-   background: @color-base;
-   color: #fff;
+   background: @button-bg-color;
+   color: @button-text-color;
    padding: 10px 15px;
    font-family: @font-headline-family;
    font-weight: bold;
+   border-radius: @button-border-radius;
 
    &:hover {
       background: lighten(@color-base, 10%);
