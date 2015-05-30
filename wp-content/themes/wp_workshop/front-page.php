@@ -71,6 +71,7 @@ if( is_array($posts) ) {
 
    // Rendere HTML für die News Beiträge
    echo '<div class="module">';
+   echo '<div class="row"><div class="column small-12"><h2>Willkommen auf meinem Blog</h2></div></div>';
    echo '<div class="row">';
 
    // Löse den Array auf und rendere jeden Post

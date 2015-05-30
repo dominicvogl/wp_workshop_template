@@ -26,7 +26,7 @@ if (have_posts()) {
 
             <h3><?php the_title(); ?></h3>
             <span class="post-date"><?php the_date(); ?></span>
-            <?php echo get_category_list($post_ID) ?>
+            <?php echo get_category_list($post->ID) ?>
             <?php the_content(''); ?>
             <a href="<?php echo get_permalink($post_ID); ?>" class="button">Zum Artikel</a>
 
