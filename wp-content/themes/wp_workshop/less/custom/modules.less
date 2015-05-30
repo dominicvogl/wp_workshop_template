@@ -95,9 +95,7 @@
       }
 
       h2 {
-         a {
-            color: #fff;
-         }
+         color: #fff;
       }
 
       span {
@@ -113,6 +111,14 @@
          width: 50%;
          left: 0;
          z-index: 15;
+
+         a {
+            &:hover {
+               .inner-content {
+                  background: darken(@color-base, 8%);
+               }
+            }
+         }
       }
 
    }
