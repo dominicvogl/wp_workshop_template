@@ -9,21 +9,36 @@ if(have_posts()) {
 
       <div class="row">
 
-         <div class="column small-12">
+         <div class="column">
 
             <div class="inner-content">
 
-               <h3><?php the_title(); ?></h3>
-               <span class="post-date"><?php the_date(); ?></span>
-               <?php the_content('');?>
-               <?php the_post_thumbnail('large'); ?>
-               <a href="<?php echo home_url(); ?>" class="button">Zurück zur Startseite</a>
+               <div class="row">
 
-            </div>
+                  <div class="column small-12 medium-8">
 
-         </div>
+                     <h1><?php the_title(); ?></h1>
+                     <span class="post-date"><?php the_date(); ?></span>
+                     <?php the_content('');?>
 
-      </div>
+                     <div>
+                        <a href="<?php echo home_url(); ?>" class="button block">Zurück zur Startseite</a>
+                     </div>
+
+                  </div>
+
+                  <div class="column small-12 medium-4">
+                     <?php the_post_thumbnail('large'); ?>
+                     <?php echo get_category_list( get_the_ID() ); ?>
+                  </div>
+
+               </div> <!-- row -->
+
+            </div> <!-- inner-content -->
+
+         </div> <!-- column -->
+
+      </div> <!-- row -->
 
       <?php
    }
