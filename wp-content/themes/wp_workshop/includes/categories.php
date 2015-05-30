@@ -12,9 +12,9 @@ function get_category_list($postID)
 
    $html = '<ul class="category-list">';
 
-   foreach($post_cats as $post_cat) {
+   foreach ($post_cats as $post_cat) {
 
-      $html .= '<li class="category-'.$post_cat.' category-'.get_category_slug($post_cat).'"><a href="'.get_category_link($post_cat).'">'.get_the_category_by_ID($post_cat).'</a></li>';
+      $html .= '<li class="category-' .$post_cat . ' category-' . get_category_slug($post_cat) . '"><a href="' . get_category_link($post_cat) . '">' . get_the_category_by_ID($post_cat) . '</a></li>';
 
    }
 
@@ -34,7 +34,7 @@ function get_category_slug($category_ID)
 
    $category = get_the_category_by_ID($category_ID);
 
-   if( empty($category) )
+   if (empty($category))
       return;
 
    $slug = strtolower($category);
