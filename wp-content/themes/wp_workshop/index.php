@@ -7,13 +7,14 @@ get_header();
 if (have_posts()) {
 
    // Zeige die letzten Newsbeiträge an
-   echo '<div class="row">';
 
    if (is_archive()) {
-      $cat_id = get_query_var('cat');
-      $cat_obj = get_category($cat_id);
-      echo '<div class="column small-12"><h1>Archiv: ' . $cat_obj->cat_name . '</h1></div>';
+      $cat_obj = get_category(get_query_var('cat'));
+      echo '<div class="row"><div class="column small-12"><h1>Archiv: ' . $cat_obj->cat_name . '</h1></div></div>';
    }
+
+
+   echo '<div class="row">';
 
    while (have_posts()) {
       the_post();
