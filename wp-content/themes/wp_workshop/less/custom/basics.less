@@ -125,3 +125,33 @@ h3 {
    color: lighten(@color-text, 40%);
    font-size: 14px;
 }
+
+//
+// Kategorie Liste im Post Archiv
+//
+
+.post-single {
+   .category-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+
+      li {
+         display: inline-block;
+         margin-right: 4px;
+         margin-bottom: 5px;
+
+         a {
+            .button;
+            padding: 5px 8px;
+            font-size: 14px;
+            color: darken(@color-base, 10%);
+            background: lighten(@color-base, 30%);
+
+            &:hover {
+               color: #fff;
+            }
+         }
+      }
+   }
+}
