@@ -2,8 +2,8 @@
 
 get_header();
 
-if(have_posts()) {
-   while(have_posts()) {
+if (have_posts()) {
+   while (have_posts()) {
       the_post();
       ?>
 
@@ -19,7 +19,7 @@ if(have_posts()) {
 
                      <h1><?php the_title(); ?></h1>
                      <span class="post-date"><?php the_date(); ?></span>
-                     <?php the_content('');?>
+                     <?php the_content(''); ?>
 
                      <div>
                         <a href="<?php echo home_url(); ?>" class="button block">Zurück zur Startseite</a>
@@ -29,18 +29,22 @@ if(have_posts()) {
 
                   <div class="column small-12 medium-4">
                      <?php the_post_thumbnail('large'); ?>
-                     <?php echo get_category_list( get_the_ID() ); ?>
+                     <?php echo get_category_list(get_the_ID()); ?>
                   </div>
 
-               </div> <!-- row -->
+               </div>
+               <!-- row -->
 
-            </div> <!-- inner-content -->
+            </div>
+            <!-- inner-content -->
 
-         </div> <!-- column -->
+         </div>
+         <!-- column -->
 
-      </div> <!-- row -->
+      </div>
+      <!-- row -->
 
-      <?php
+   <?php
    }
 }
 
