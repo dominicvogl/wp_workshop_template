@@ -30,7 +30,9 @@ if( is_array($posts) ) {
       ?>
 
       <div class="slick-slider-slide module-header-image">
-         <?php the_post_thumbnail('header-image'); ?>
+         <div class="header-image ">
+            <?php echo get_the_post_thumbnail($post->ID, 'header-image'); ?>
+         </div>
 
          <div class="header-post">
             <a href="<?php echo get_permalink($post->ID); ?>">

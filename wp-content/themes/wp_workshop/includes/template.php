@@ -27,7 +27,7 @@ add_theme_support( 'post-thumbnails' );
 // Füge eine neue Bildschirmgröße hinzu
 // ----------------------------------------------------------------------------------------
 
-add_image_size( 'header-image', 1500, 800, true );
+add_image_size( 'header-image', 1500, 550, true );
 
 //
 // Registriere ein Menü
