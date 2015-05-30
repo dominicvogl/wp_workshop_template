@@ -4,9 +4,8 @@
 // ---------------------------------------------------------------
 
 
-
 // Wenn der DOM (Dokument) fertig geladen ist, dann tue etwas
-$(document).ready(function() {
+$(document).ready(function () {
 
    // Initialisiere den Slide auf allen Elementen mit der angegebenen Klasse
    slick_slider('.slick-slider');
@@ -20,7 +19,7 @@ $(document).ready(function() {
 
 function slick_slider(obj) {
 
-   $(obj).each(function() {
+   $(obj).each(function () {
       $(this).slick({
          autoplay: true,
          speed: 600,
