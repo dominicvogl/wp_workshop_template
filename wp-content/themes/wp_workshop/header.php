@@ -25,7 +25,9 @@
    <div class="inner-content">
       <div class="row">
             <div class="column small-12 medium-6 logo">
-               <img src="<?php echo get_template_directory_uri().'/assets/logo.svg';?>" width="300" alt="Wordpress Logo"/>
+               <a href="<?php echo home_url(); ?>" title="Gehe zur Startseite">
+                  <img src="<?php echo get_template_directory_uri().'/assets/logo.svg';?>" width="300" alt="Wordpress Logo"/>
+               </a>
             </div>
 
             <div class="column small-12 medium-6">
