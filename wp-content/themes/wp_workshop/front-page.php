@@ -17,12 +17,12 @@ $posts = get_posts($args);
 $exclude_posts = array();
 
 // Prüfe ob ein Array zurückgeliefert wird
-if( is_array($posts) ) {
+if (is_array($posts)) {
 
    echo '<div class="slick-slider">';
 
    // Löse den Array auf und rendere jeden Post
-   foreach($posts as $post) {
+   foreach ($posts as $post) {
       setup_postdata($post);
 
       // Speichere die ID's der Beiträge
@@ -44,16 +44,17 @@ if( is_array($posts) ) {
          </div>
 
       </div>
+      <!-- /.slick-slider-slide -->
 
    <?php
    }
 
    echo '</div>';
+   // .slick-slider
 
    // Setze den Wordpress Query / Loop zurück
    wp_reset_postdata();
 }
-
 
 
 // Wähle die nötigen Argumente um weitere drei Newsbeiträge zu laden, die Hightlights aus dem Header werden ausgeschlossen
@@ -69,38 +70,51 @@ $posts = get_posts($args);
 
 
 // Prüfe ob ein Array zurückgeliefert wird
-if( is_array($posts) ) {
+if (is_array($posts)) {
+   ?>
 
-   // Rendere HTML für die News Beiträge
-   echo '<div class="module">';
-   echo '<div class="row"><div class="column small-12"><h2>Willkommen auf meinem Blog</h2></div></div>';
-   echo '<div class="row">';
+   <div class="module">
 
-   // Löse den Array auf und rendere jeden Post
-   foreach($posts as $post) {
-      setup_postdata($post);
-      ?>
-
-      <div class="column small-12 medium-6 large-4">
-
-         <div class="inner-content">
-
-            <h3><?php the_title(); ?></h3>
-            <span class="post-date"><?php the_date(); ?></span>
-            <?php the_content(''); ?>
-            <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>" class="button">Zum Artikel</a>
-
+      <div class="row">
+         <div class="column small-12">
+            <h2>Willkommen auf meinem Blog</h2>
          </div>
-
       </div>
 
+      <div class="row">
+
+         <?php
+         // Löse den Array auf und rendere jeden Post
+         foreach ($posts as $post) {
+            setup_postdata($post);
+            ?>
+
+            <div class="column small-12 medium-6 large-4 post-<?php echo $post->ID; ?>">
+
+               <div class="inner-content">
+
+                  <h3><?php the_title(); ?></h3>
+                  <span class="post-date"><?php the_date(); ?></span>
+                  <?php echo get_category_list($post->ID) ?>
+                  <?php the_content(''); ?>
+                  <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>" class="button">Zum Artikel</a>
+
+               </div>
+
+            </div>
+            <!-- /.column -->
+
+         <?php
+         }
+         ?>
+
+      </div>
+      <!-- /.row -->
+
+   </div>
+   <!-- /.module -->
+
    <?php
-
-   }
-
-   echo '</div>';
-   echo '</div>';
-
    // Setze den Wordpress Query / Loop zurück
    wp_reset_postdata();
 }
@@ -110,12 +124,14 @@ if( is_array($posts) ) {
 $post = get_post(2);
 
 // Prüfe ob die Variable NICHT leer ist
-if( !empty($post) ) {
+if (!empty($post)) {
    setup_postdata($post);
    ?>
 
    <div class="row">
-      <div class="column">
+
+      <div class="column post-<?php echo $post->ID; ?>">
+
          <div class="inner-content">
 
             <div class="row">
@@ -132,10 +148,16 @@ if( !empty($post) ) {
                </div>
 
             </div>
+            <!-- /.row -->
 
          </div>
+         <!-- /.inner-content -->
+
       </div>
+      <!-- /.column -->
+
    </div>
+   <!-- /.row -->
 
    <?php
 

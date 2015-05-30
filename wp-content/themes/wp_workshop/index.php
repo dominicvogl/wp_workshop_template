@@ -20,7 +20,7 @@ if (have_posts()) {
       the_post();
       ?>
 
-      <div class="column small-12 medium-6 large-4 post-single post-<?php echo $post->ID; ?>">
+      <div class="column small-12 medium-6 large-4 post-<?php echo $post->ID; ?>">
 
          <div class="inner-content">
 
