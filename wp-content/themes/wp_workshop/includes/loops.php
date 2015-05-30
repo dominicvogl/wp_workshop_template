@@ -6,7 +6,8 @@
  * @return string
  */
 
-function first_loop($args = array()) {
+function first_loop($args = array())
+{
 
     $default = array(
         'post_type' => 'post',

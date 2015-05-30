@@ -113,7 +113,7 @@ function bwrk_load_javascript()
 
          array(
             'handle'	=> 'custom',
-            'src'		=> get_template_directory_uri() .'/js/custom.js',
+            'src'		=> get_template_directory_uri() .'/js/custom/custom.js',
             'deps'	=> array('jquery'),
          )
 
