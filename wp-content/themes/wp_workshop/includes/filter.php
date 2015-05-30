@@ -1,8 +1,20 @@
 <?php
 
-if (!is_admin()) {
+/*
+ * filter.php
+ * Hier werden bereits vorhandene Funktionen durch Filter abgewandelt
+ * Autor: Dominic Vogl
+ */
+
+// Führe diese Funktion nur dann aus wenn man nicht als Admin im Backend ist
+if (!is_admin())
    add_filter('style_loader_tag', 'enqueue_less_styles', 5, 2);
-}
+
+/**
+ * Passen den Dateitypen an, sodass dieser richtig gerendert wird um Less über Javascript kompilieren lassen zu können
+ * @param $tag
+ * @param $handle
+ */
 
 function enqueue_less_styles($tag, $handle)
 {

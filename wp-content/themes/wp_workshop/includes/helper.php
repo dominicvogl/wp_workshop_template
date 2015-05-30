@@ -1,7 +1,12 @@
 <?php
+/*
+ * helper.php
+ * Hier sind kleine Hilfsfunktionen enthalten
+ * Autor: Dominic Vogl
+ */
 
 /**
- * Rendere den Var Dump übersichtlicher
+ * Diese Klasse verbessert die Ansicht der Ausgaben von Variablen
  * @param $value
  */
 

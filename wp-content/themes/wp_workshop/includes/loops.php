@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * loops.php
+ * Hier werden die verschiedenen möglichen Loops gerendert inkl einem Standard Beispiel
+ * Autor: Dominic Vogl
+ */
+
 /**
  * Dein erster wirklich sehr einfacher Loop, dieser gibt dir einfach die Titel alle verfügbaren Beiträge zurück und rendert diese.
  * @param array $args
