@@ -7,6 +7,12 @@ if (have_posts()) {
    // Zeige die letzten Newsbeiträge an
    echo '<div class="row">';
 
+   if(is_archive()) {
+      $cat_id = get_query_var('cat');
+      $cat_obj = get_category($cat_id);
+      echo '<div class="column small-12"><h1>Archiv: '.$cat_obj->cat_name.'</h1></div>';
+   }
+
    while (have_posts()) {
       the_post();
       ?>
