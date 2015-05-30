@@ -7,25 +7,35 @@
 
          <ul class="socials">
             <li>
-               <a href="https://www.facebook.com/dominic.vogl/">
+               <a href="https://www.facebook.com/dominic.vogl/" target="_blank">
                   <span class="fa fa-facebook-square"></span>
                </a>
             </li>
+
             <li>
-               <a href="https://www.twitter.com/arynsworld">
+               <a href="https://www.twitter.com/arynsworld" target="_blank">
                   <span class="fa fa-twitter-square"></span>
                </a>
             </li>
+
             <li>
-               <a href="https://instagram.com/vogl_photography/">
+               <a href="https://instagram.com/vogl_photography/" target="_blank">
                   <span class="fa fa-instagram"></span>
                </a>
             </li>
+
             <li>
-               <a href="https://github.com/dvcccc/">
+               <a href="https://github.com/dvcccc/" target="_blank">
                   <span class="fa fa-github-square"></span>
                </a>
             </li>
+
+            <li>
+               <a href="https://wordpress.org/" target="_blank">
+                  <span class="fa fa-wordpress"></span>
+               </a>
+            </li>
+
          </ul>
 
       </div>
