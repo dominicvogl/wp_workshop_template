@@ -20,16 +20,48 @@
       overflow: hidden;
    }
 
+   .logo {
+      text-align: center;
+
+      img {
+         margin-bottom: @grid-gutter-width;
+      }
+   }
+
    .header-menu {
       list-style: none;
-      width: 50%;
-      float: right;
       display: table;
-      table-layout: fixed;
+      //table-layout: fixed;
+      margin: 0;
+      padding: 0;
+      width: 100%;
 
       li {
          display: table-cell;
          text-align: center;
+
+         span {
+            display: block;
+            margin: 0 2px;
+         }
+      }
+   }
+
+   .column {
+      margin-bottom: 0;
+   }
+
+   @media (min-width: @medium) {
+      .logo {
+         img {
+            margin-bottom: 0;
+         }
+      }
+
+      .header-menu {
+         float: right;
+         margin-top: 16px;
+         table-layout: inherit;
       }
    }
 }
@@ -52,7 +84,6 @@
       width: 50%;
       left: 0;
       z-index: 15;
-
    }
 }
 
