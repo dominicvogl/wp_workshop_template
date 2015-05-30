@@ -3,24 +3,28 @@
 * Autor: Dominic Vogl
 */
 
+//
+// Externe Bibliotheken
+//
+
 // Setzte diverse Browserstandards zurück, sodass sich die meisten HTML Elemente in den verschiedenen Browsern angleichen
-@import "normalize";
+@import "libs/normalize";
+
+// Der Slick Slider
+@import "libs/slick";
+@import "libs/slick-theme.css";
 
 // Foundation Framework
 // @import "foundation.css";
 
 // Definierte Variablen
-@import "variables";
+@import "custom/variables";
 
 // Das responsive Grid
-@import "grid";
-
-// Der Slick Slider
-@import "slick";
-@import "slick-theme.css";
+@import "custom/grid";
 
 // Module
-@import "modules";
+@import "custom/modules";
 
 // Deine eigenen Styles =)
-@import "custom";
+@import "custom/basics";

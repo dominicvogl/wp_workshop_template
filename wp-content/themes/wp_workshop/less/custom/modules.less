@@ -1,0 +1,152 @@
+//
+// modules.less
+// ----------------------------------------------------------------
+
+//
+// Einfaches .module
+//
+
+.module {
+   padding: (@grid-gutter-width * 2) 0;
+}
+
+//
+// Modul Header
+//
+
+.module-header {
+
+   .inner-content {
+      overflow: hidden;
+   }
+
+   .logo {
+      text-align: center;
+
+      img {
+         margin-bottom: @grid-gutter-width;
+      }
+   }
+
+   .header-menu {
+      list-style: none;
+      display: table;
+      //table-layout: fixed;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      li {
+         display: table-cell;
+         text-align: center;
+
+         span {
+            display: block;
+            margin: 0 2px;
+         }
+      }
+   }
+
+   .column {
+      margin-bottom: 0;
+   }
+
+   @media (min-width: @medium) {
+
+      .logo {
+         img {
+            margin-bottom: 0;
+         }
+      }
+
+      .header-menu {
+         float: right;
+         margin-top: 16px;
+         table-layout: inherit;
+      }
+
+   }
+}
+
+//
+// Module Header Image
+//
+
+.module-header-image {
+   width: 100%;
+   position: relative;
+
+   img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+      z-index: 10;
+   }
+
+   .header-post {
+      .inner-content {
+         background: @color-base;
+         color: #fff;
+      }
+
+      h2 {
+         a {
+            color: #fff;
+         }
+      }
+
+      span {
+         color: #fff;
+      }
+   }
+
+   @media (min-width: @medium) {
+
+      .header-post {
+         position: absolute;
+         bottom: 60px;
+         width: 50%;
+         left: 0;
+         z-index: 15;
+      }
+
+   }
+}
+
+//
+// Module Footer Navigation
+//
+
+.module-footer {
+   margin-bottom: 0;
+   background: @color-base;
+   padding: @grid-gutter-width 0;
+   color: #fff;
+
+   a {
+      color: #fff;
+   }
+
+   .column {
+      margin-bottom: 0;
+   }
+
+   .footer-menu {
+      list-style: none;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+
+      li {
+         display: table-cell;
+         text-align: center;
+      }
+
+      span {
+         background: #fff;
+         color: @color-base;
+      }
+   }
+
+}
