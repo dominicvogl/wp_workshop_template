@@ -7,7 +7,7 @@
 // Wenn der DOM (Dokument) fertig geladen ist, dann tue etwas
 $(document).ready(function () {
 
-   // Initialisiere den Slide auf allen Elementen mit der angegebenen Klasse
+   // Initialisiere den Slider auf allen Elementen mit der übergebenen Klasse
    slick_slider('.slick-slider');
 
 });

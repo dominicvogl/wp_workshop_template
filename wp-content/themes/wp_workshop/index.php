@@ -6,16 +6,16 @@ get_header();
 
 if (have_posts()) {
 
-   // Zeige die letzten Newsbeiträge an
-
+   // Prüfe ob gerade eine Archivseite vorliegt
    if (is_archive()) {
       $cat_obj = get_category(get_query_var('cat'));
-      echo '<div class="row"><div class="column small-12"><h1>Archiv: ' . $cat_obj->cat_name . '</h1></div></div>';
+      $cat_obj = $cat_obj->cat_name;
+      echo '<div class="row"><div class="column small-12"><h1>Archiv: ' . $cat_obj . '</h1></div></div>';
    }
-
 
    echo '<div class="row">';
 
+   // Zeige die letzten Newsbeiträge an
    while (have_posts()) {
       the_post();
       ?>
@@ -31,13 +31,15 @@ if (have_posts()) {
             <a href="<?php echo get_permalink($post_ID); ?>" class="button">Zum Artikel</a>
 
          </div>
+         <!-- /.inner-content -->
 
       </div>
+      <!-- /.column -->
 
    <?php
    }
 
-   echo '</div>';
+   echo '</div> <!-- /.row -->';
 
 }
 

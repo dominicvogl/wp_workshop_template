@@ -1,4 +1,4 @@
-<div class="module module-footer">
+<footer class="module module-footer">
 
    <div class="row">
 
@@ -6,6 +6,7 @@
          <p>&copy; 2015 Design & Umsetzung: <a href="http://www.cat-ia.de" target="_blank">Dominic Vogl</a></p>
 
          <ul class="socials">
+
             <li>
                <a href="https://www.facebook.com/dominic.vogl/" target="_blank">
                   <span class="fa fa-facebook-square"></span>
@@ -54,11 +55,14 @@
          );
          ?>
 
-      </div> <!-- column small-12 -->
+      </div>
+      <!-- /.column -->
 
-   </div> <!-- row -->
+   </div>
+   <!-- row -->
 
-</div> <!-- module module-footer -->
+</footer>
+<!-- /.module.module-footer -->
 
 <?php
 

@@ -4,10 +4,10 @@ get_header();
 
 // Wähle die nötigen Argumente um nur den aktuellsten Beitrag zurück zu bekommen
 $args = array(
-   'post_type' => 'post',
-   'orderby' => 'DESC',
-   'posts_per_page' => 4,
-   'category__in' => array(3)
+   'post_type' => 'post',        // Zeige Beiträge (keine Seiten)
+   'orderby' => 'DESC',          // Zeige den aktuellsten zuerst
+   'posts_per_page' => 4,        // Zeige 4 Beiträge an
+   'category__in' => array(3)    // Zeige nur Beiträge mit der Kategorie ID 3 an
 );
 
 // Lade die anhand der übergebenen Parametern die passenden Beiträge aus der Datenbank
@@ -59,10 +59,10 @@ if (is_array($posts)) {
 
 // Wähle die nötigen Argumente um weitere drei Newsbeiträge zu laden, die Hightlights aus dem Header werden ausgeschlossen
 $args = array(
-   'post_type' => 'post',
-   'orderby' => 'DESC',
-   'posts_per_page' => 3,
-   'post__not_in' => $exclude_posts
+   'post_type' => 'post',              // Zeige Beiträge an, keine Seiten
+   'orderby' => 'DESC',                // Zeige den aktuellsten Beitrag zuerst
+   'posts_per_page' => 3,              // Zeige 3 Beiträge
+   'post__not_in' => $exclude_posts    // Schließe bereits vorhandene Beiträge aus
 );
 
 // Lade die anhand der übergebenen Parametern die passenden Beiträge aus der Datenbank
@@ -80,6 +80,7 @@ if (is_array($posts)) {
             <h2>Willkommen auf meinem Blog</h2>
          </div>
       </div>
+      <!-- /.row -->
 
       <div class="row">
 
