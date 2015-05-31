@@ -16,5 +16,10 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 * Wordpress- und Frontend Entwickler bei [BERGWERK](https://www.bergwerk.ag)
 
 ### Weiterführende Links
-* Less als Präprozessor nutzen: [lesscss.org](http://lesscss.org/)
+
+##### Präprozessoren
+* Less: [lesscss.org](http://lesscss.org/)
+* Sass: [sass-lang.com](http://sass-lang.com/)
+
+##### CSS
 * CSS Selektoren die jeder Frontend Entwickler kennen muss: [code.tutsplus.com](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
