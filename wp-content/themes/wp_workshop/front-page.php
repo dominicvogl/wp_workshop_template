@@ -92,11 +92,17 @@ if (is_array($posts)) {
 
             <div class="column small-12 medium-6 large-4 post-<?php echo $post->ID; ?>">
 
+               <div class="inner-image">
+                  <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>">
+                     <?php the_post_thumbnail('thumbnail'); ?>
+                  </a>
+               </div>
+
                <div class="inner-content">
 
+                  <?php echo get_category_list($post->ID) ?>
                   <h3><?php the_title(); ?></h3>
                   <span class="post-date"><?php the_date(); ?></span>
-                  <?php echo get_category_list($post->ID) ?>
                   <?php the_content(''); ?>
                   <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>" class="button">Zum Artikel</a>
 
