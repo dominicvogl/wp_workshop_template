@@ -11,7 +11,6 @@ define('TEMPLATE_URI', get_template_directory_uri()); // Speichere den Pfad zum 
 // Liste mit den Namen der einzubindenen Dateien
 $files = array(
    'helper',
-   'filter',
    'categories',
    'template',
    'loops'
