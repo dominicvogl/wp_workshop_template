@@ -18,8 +18,8 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 
 ### 2. Verwendete Plugins
 
-* Advanced Custom Fields Pro
 * Force Regenerate Thumbnails
+* Advanced Custom Fields Pro (optional)
 
 ### 3. Über den Autor
 
