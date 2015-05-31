@@ -2,43 +2,46 @@
 
 get_header();
 
-if (have_posts()) {
+if (have_posts()) { ?>
 
-   // Prüfe ob gerade eine Archivseite vorliegt
-   if (is_archive()) {
-      $cat_obj = get_category(get_query_var('cat'));
-      $cat_obj = $cat_obj->cat_name;
-      echo '<div class="row"><div class="column small-12"><h1>Archiv: ' . $cat_obj . '</h1></div></div>';
-   }
+   <div class="row">
+      <div class="column">
+         <h2>Willkommen auf meinem Blog</h2>
+      </div>
 
-   echo '<div class="row">';
+      <?php
 
-   // Zeige die letzten Newsbeiträge an
-   while (have_posts()) {
-      the_post();
-      ?>
+      // Zeige die letzten Newsbeiträge an
+      while (have_posts()) {
+         the_post();
+         ?>
 
-      <div class="column small-12 medium-6 large-4 post-<?php echo $post->ID; ?>">
+         <div class="column">
 
-         <div class="inner-content">
+            <div class="inner-content">
 
-            <h3><?php the_title(); ?></h3>
-            <span class="post-date"><?php the_date(); ?></span>
-            <?php echo get_category_list($post->ID) ?>
-            <?php the_content(''); ?>
-            <a href="<?php echo get_permalink($post->ID); ?>" class="button">Zum Artikel</a>
+               <h3><?php the_title(); ?></h3>
+               <span class="post-date"><?php the_date(); ?></span>
+               <?php echo get_category_list($post->ID) ?>
+               <?php the_post_thumbnail('medium'); ?>
+               <?php the_content(''); ?>
+
+               <a href="<?php echo get_permalink($post->ID); ?>" class="button">Zum Artikel</a>
+
+            </div>
+            <!-- /.inner-content -->
 
          </div>
-         <!-- /.inner-content -->
+         <!-- /.column -->
 
-      </div>
-      <!-- /.column -->
+      <?php
+      }
+      ?>
 
-   <?php
-   }
+   </div>
+   <!-- /.row -->
 
-   echo '</div> <!-- /.row -->';
-
+<?php
 }
 
 get_footer();

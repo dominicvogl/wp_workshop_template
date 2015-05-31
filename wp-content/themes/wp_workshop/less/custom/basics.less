@@ -1,6 +1,6 @@
 /*
 * custom.less
-* Autor: Dominic Vogl
+* Autor: Dein Name
 */
 
 /*
@@ -18,7 +18,6 @@ html {
 }
 
 body {
-   background: @color-background url("../assets/noisy_net.png") repeat;
    color: @color-text;
    font-size: @font-base-size;
    font-family: @font-base-family;
@@ -41,11 +40,13 @@ a {
 }
 
 //
-// Absätze
+// Überschriften
 //
 
-p {
-   line-height: 21px;
+h1, h2, h3 {
+   font-family: @font-headline-family;
+   font-weight: 500;
+   color: @color-base;
 }
 
 //
@@ -56,7 +57,7 @@ p {
    display: inline-block;
    background: @button-bg-color;
    color: @button-text-color;
-   padding: 10px 15px;
+   padding: 7px;
    font-family: @font-headline-family;
    font-weight: bold;
    border-radius: @button-border-radius;
@@ -67,89 +68,9 @@ p {
 }
 
 //
-// Überschriften
-//
-
-h1, h2, h3 {
-   font-family: @font-headline-family;
-   font-weight: 500;
-   color: @color-base;
-}
-
-h1 {
-   font-size: 32px;
-   text-transform: uppercase;
-   margin: 15px 0 5px;
-}
-
-h2 {
-   font-size: 26px;
-   margin: 5px 0;
-   text-transform: uppercase;
-}
-
-h3 {
-   font-size: 22px;
-   margin: 15px 0 5px;
-}
-
-
-//
-// Allgemeine Elemente
-//
-
-.inner-content {
-   padding: @grid-gutter-width;
-   background: #fff;
-   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
-}
-
-//
-// Images
-//
-
-.image-round {
-   border-radius: 50%;
-   overflow: hidden;
-
-   img {
-      display: block;
-   }
-}
-
-//
-// Beiträge
-//
-
-.post-date {
-   color: lighten(@color-text, 40%);
-   font-size: 14px;
-}
-
-//
 // Kategorie Liste im Post Archiv
 //
 
 .category-list {
-   list-style: none;
-   padding: 0;
-   margin: 10px 0 0;
 
-   li {
-      display: inline-block;
-      margin-right: 4px;
-      margin-bottom: 5px;
-
-      a {
-         .button;
-         padding: 5px 8px;
-         font-size: 14px;
-         color: darken(@color-base, 10%);
-         background: lighten(@color-base, 30%);
-
-         &:hover {
-            color: #fff;
-         }
-      }
-   }
 }
