@@ -10,7 +10,7 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
   * CSS
 
 ### 1. Dazugehörige Dokumente
-* Die Agenda
+* Die Agenda [Dokumente öffnen](https://www.dropbox.com/sh/0st5j2rgq3tfh7k/AAAOn2GOFXmse7F3MQnrqlxMa?dl=0)
 * Das fertige Wordpress Template [herunterladen](https://github.com/dvcccc/wp_workshop_template/archive/master.zip)
 * Allgemeine Dokumente und Daten für die Teilnehmer: [Dokumente öffnen](https://www.dropbox.com/sh/0st5j2rgq3tfh7k/AAAOn2GOFXmse7F3MQnrqlxMa?dl=0)
 * Die Workshop Übungsdaten: [Github Repository](https://github.com/dvcccc/wp_workshop_practice)
