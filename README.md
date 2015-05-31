@@ -20,7 +20,9 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 
 ### 3. Über den Autor
 
-* [Dominic Vogl](http://www.cat-ia.de)  
+* Dominic Vogl
+    * [Website](http://www.cat-ia.de)
+    * [Facebook](https://www.facebook.com/dominic.vogl)  
 * Wordpress- und Frontend Entwickler bei [BERGWERK](https://www.bergwerk.ag)
 
 ### 4. Weiterführende Links
@@ -31,3 +33,6 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 
 ##### CSS
 * CSS Selektoren die jeder Frontend Entwickler kennen muss: [code.tutsplus.com](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+
+##### Wordpress
+* Wordpress Codex [codex.wordlress.org](https://codex.wordpress.org/)
