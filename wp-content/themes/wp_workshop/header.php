@@ -13,7 +13,7 @@
 
    <!-- Lade die Stylesheets -->
    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:400,700"/>
-   <link rel="stylesheet/less" href="<?php echo TEMPLATE_URI; ?>/less/_all.less"/>
+   <link rel="stylesheet/less" href="<?php echo TEMPLATE_URI; ?>/less/all.less"/>
 
    <?php wp_head(); ?>
 

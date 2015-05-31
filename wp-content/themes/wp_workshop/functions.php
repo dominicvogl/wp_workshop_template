@@ -1,7 +1,8 @@
 <?php
 
-
+//
 // Definiere globale Konstanten um mehrfach benötigte Inhalte zu speichern
+//
 
 define('CURRENT_PAGE_ID', get_the_ID()); // Die aktuelle ID eines Beitrags oder einer Seite, je nachdem was gerade aktiv ist
 define('TEMPLATE_VERSION', 1.0); // Version des Templates (wird für den Dateiimport benötigt)
