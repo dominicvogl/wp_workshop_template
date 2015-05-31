@@ -1,7 +1,5 @@
 <?php
 
-$post_ID = get_the_ID();
-
 get_header();
 
 if (have_posts()) {
@@ -28,7 +26,7 @@ if (have_posts()) {
             <span class="post-date"><?php the_date(); ?></span>
             <?php echo get_category_list($post->ID) ?>
             <?php the_content(''); ?>
-            <a href="<?php echo get_permalink($post_ID); ?>" class="button">Zum Artikel</a>
+            <a href="<?php echo get_permalink($post->ID); ?>" class="button">Zum Artikel</a>
 
          </div>
          <!-- /.inner-content -->

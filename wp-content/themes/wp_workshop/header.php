@@ -8,7 +8,12 @@
 
    <title><?php wp_title('-', true, 'right'); ?></title>
 
-   <!--<link rel="stylesheet/less" href="<?php /*echo get_template_directory_uri(); */ ?>/css/custom.less" media="all"/>-->
+   <!-- Lade das Favicon -->
+   <link rel="Shortcut Icon" type="image/x-icon" href="<?php echo TEMPLATE_URI; ?>/assets/favicon.ico"/>
+
+   <!-- Lade die Stylesheets -->
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:400,700"/>
+   <link rel="stylesheet/less" href="<?php echo TEMPLATE_URI; ?>/less/_all.less"/>
 
    <?php wp_head(); ?>
 
@@ -24,7 +29,7 @@
 
          <div class="column small-12 medium-6 logo">
             <a href="<?php echo home_url(); ?>" title="Gehe zur Startseite">
-               <img src="<?php echo get_template_directory_uri() . '/assets/logo.svg'; ?>" width="300"
+               <img src="<?php echo TEMPLATE_URI . '/assets/logo.svg'; ?>" width="300"
                     alt="Wordpress Logo"/>
             </a>
          </div>

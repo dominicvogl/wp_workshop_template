@@ -65,5 +65,14 @@
 <!-- /.module.module-footer -->
 
 <?php
+echo TEMPLATE_URI;
+?>
+<!-- Lade externe Javascript Dateien -->
+<script src="<?php echo TEMPLATE_URI ?>/js/lib/less.min.js"></script>
+<script src="<?php echo TEMPLATE_URI; ?>/js/lib/jquery.js"></script>
+<script src="<?php echo TEMPLATE_URI; ?>/js/lib/slick.js"></script>
+<script src="<?php echo TEMPLATE_URI; ?>/js/custom/custom.js"></script>
+
+<?php
 
 wp_footer();
