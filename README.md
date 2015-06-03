@@ -39,3 +39,6 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 
 ##### Wordpress
 * Wordpress Codex [codex.wordlress.org](https://codex.wordpress.org/)
+* WPLift [wplift.com](http://wplift.com/)
+* Dr. Web [drweb.de](http://www.drweb.de/magazin/category/wordpress/)
+* Smashing Magazine [smashingmagazine.com](http://www.smashingmagazine.com/category/wordpress/)
