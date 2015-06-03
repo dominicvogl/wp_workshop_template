@@ -50,6 +50,7 @@ Ihr bekommt:
 * Euere Wordpress Struktur mit wp-content/themes/MeinTemplate
 * Datenbank MySQL zum installieren
 
+Euere Daten:
 * Dein Name
 * Dein Name
 * Dein Name
