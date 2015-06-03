@@ -42,3 +42,25 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 * WPLift: [wplift.com](http://wplift.com/)
 * Dr. Web: [drweb.de](http://www.drweb.de/magazin/category/wordpress/)
 * Smashing Magazine: [smashingmagazine.com](http://www.smashingmagazine.com/category/wordpress/)
+
+### 5. Euere Wordpress Installationen
+
+####
+Ihr bekommt:
+* Euere Wordpress Struktur mit wp-content/themes/MeinTemplate
+* Datenbank MySQL zum installieren
+
+* Dein Name
+* Dein Name
+* Dein Name
+* ...
+
+### 6. Hosting
+
+* [df.eu](https://www.df.eu/de/webhosting/my-home-plus/)
+* [uberspace.de](https://uberspace.de/)
+* [hetzner](https://www.hetzner.de/hosting/produkte_webspace/level1)
+
+### 7. Lokale Testumgebungen
+* [MAMP](https://www.mamp.info/de/)
+* [xampp](https://www.apachefriends.org/de/index.html)
