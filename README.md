@@ -50,11 +50,17 @@ Ihr bekommt:
 * Euere Wordpress Struktur mit wp-content/themes/MeinTemplate
 * Datenbank MySQL zum installieren
 
-Euere Daten:
-* Dein Name
-* Dein Name
-* Dein Name
-* ...
+Euere Daten (Downloads jetzt verfügbar).
+In diesen ZIP Verzeichnissen sind euere Templates und SQL Datenbanken vorhanden.
+* [Carina Koch](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/ckoch.zip?raw=true)
+* [Dominik Würth](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/dwuerth.zip?raw=true)
+* [Frank Manhart](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/fmanhart.zip?raw=true)
+* [Karin Ried](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/kried.zip?raw=true)
+* [Norbert Hölzl](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/nhoelzl.zip?raw=true)
+* [Stefanie Bartl](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/sbartl.zip?raw=true)
+* [Stefanie Betz](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/sbetz.zip?raw=true)
+* [Thomas Krä](https://github.com/dvcccc/wp_workshop_template/blob/master/participant-data/skrae.zip?raw=true)
+* [Wordpress Core](https://de.wordpress.org/latest-de_DE.zip) 
 
 ### 6. Hosting
 
