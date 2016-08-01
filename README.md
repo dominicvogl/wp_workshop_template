@@ -16,6 +16,7 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 * Allgemeine Dokumente und Daten für die Teilnehmer: [Dokumente öffnen](https://www.dropbox.com/sh/0st5j2rgq3tfh7k/AAAOn2GOFXmse7F3MQnrqlxMa?dl=0)
 * Die Workshop Übungsdaten: [Github Repository](https://github.com/dvcccc/wp_workshop_practice)
 * Wordpress Starter Template: [Repository Branch](https://github.com/dvcccc/wp_workshop_template/tree/starter-template)
+* CSS in 4 Minuten erklärt [jgthms.com](http://jgthms.com/web-design-in-4-minutes/)
 * [Wordpress Demo](http://demo.sigikid.com.w0131a05.kasserver.com/)
 
 ### 2. Verwendete Plugins
