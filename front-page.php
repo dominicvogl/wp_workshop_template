@@ -94,7 +94,7 @@ if (is_array($posts)) {
 
                <div class="inner-image">
                   <a href="<?php echo get_permalink(CURRENT_PAGE_ID); ?>">
-                     <?php the_post_thumbnail('thumbnail'); ?>
+                     <?php the_post_thumbnail('medium'); ?>
                   </a>
                </div>
 

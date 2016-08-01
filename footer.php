@@ -3,19 +3,13 @@
    <div class="row">
 
       <div class="column small-12 medium-6">
-         <p>&copy; 2015 Design & Umsetzung: <a href="http://www.cat-ia.de" target="_blank">Dominic Vogl</a></p>
+         <p>&copy; <?php echo date('Y'); ?> Design & Umsetzung: <a href="http://www.dominicvogl.de" target="_blank">Dominic Vogl</a></p>
 
          <ul class="socials">
 
             <li>
-               <a href="https://www.facebook.com/dominic.vogl/" target="_blank">
+               <a href="https://www.facebook.com/vogl.photography/" target="_blank">
                   <span class="fa fa-facebook-square"></span>
-               </a>
-            </li>
-
-            <li>
-               <a href="https://www.twitter.com/arynsworld" target="_blank">
-                  <span class="fa fa-twitter-square"></span>
                </a>
             </li>
 
@@ -26,7 +20,7 @@
             </li>
 
             <li>
-               <a href="https://github.com/dvcccc/" target="_blank">
+               <a href="https://github.com/dominicvogl/" target="_blank">
                   <span class="fa fa-github-square"></span>
                </a>
             </li>
