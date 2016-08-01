@@ -32,19 +32,20 @@
 
    .header-menu {
       list-style: none;
-      display: table;
-      //table-layout: fixed;
       margin: 0;
       padding: 0;
       width: 100%;
+      text-align: center;
 
       li {
-         display: table-cell;
-         text-align: center;
+         display: inline-block;
+
+         + li {
+            margin-top: 5px;
+         }
 
          span {
             display: block;
-            margin: 0 2px;
          }
       }
    }
@@ -55,6 +56,15 @@
 
    @media (min-width: @medium) {
 
+      .header-menu {
+
+         li + li {
+            margin-top: 0;
+            margin-left: 10px;
+         }
+
+      }
+
       .logo {
          text-align: left;
 
@@ -64,9 +74,7 @@
       }
 
       .header-menu {
-         float: right;
          margin-top: 16px;
-         table-layout: inherit;
       }
 
    }
@@ -165,25 +173,25 @@
 
    .footer-menu {
       list-style: none;
-      display: table;
-      table-layout: fixed;
       width: 100%;
       padding: 0;
-      margin: @grid-gutter-width 0 0;
 
       li {
-         display: table-cell;
-         text-align: center;
+         display: inline-block;
+
+         + li {
+            margin-left: 10px;
+         }
       }
 
       span {
-         background: #fff;
-         color: @color-base;
+         color: #fff;
+         padding: 5px;
       }
 
       a:hover {
          span {
-            background: lighten(@color-base, 20%);
+            background: darken(@color-base, 20%);
             color: #fff;
          }
       }
@@ -212,10 +220,6 @@
 
    @media (min-width: @medium) {
       text-align: left;
-
-      .footer-menu {
-         margin-top: 25px;
-      }
    }
 
 }

@@ -9,6 +9,7 @@ $(document).ready(function () {
 
    // Initialisiere den Slider auf allen Elementen mit der übergebenen Klasse
    slick_slider('.slick-slider');
+   localStorage.clear()
 
 });
 

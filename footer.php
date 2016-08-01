@@ -43,7 +43,7 @@
             array(
                'container' => '',
                'menu_class' => 'footer-menu',
-               'link_before' => '<span class="button">',
+               'link_before' => '<span>',
                'link_after' => '</span>'
             )
          );
