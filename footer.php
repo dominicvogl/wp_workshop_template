@@ -2,7 +2,7 @@
 
    <div class="row">
 
-      <div class="column small-12 medium-6">
+      <div class="column">
          <p>&copy; <?php echo date('Y'); ?> Design & Umsetzung: <a href="http://www.dominicvogl.de" target="_blank">Dominic Vogl</a></p>
 
          <ul class="socials">
@@ -34,23 +34,6 @@
          </ul>
 
       </div>
-
-      <div class="column small-12 medium-6">
-
-         <?php
-         // Funktion um ein Wordpress Menü auszugeben
-         wp_nav_menu(
-            array(
-               'container' => '',
-               'menu_class' => 'footer-menu',
-               'link_before' => '<span>',
-               'link_after' => '</span>'
-            )
-         );
-         ?>
-
-      </div>
-      <!-- /.column -->
 
    </div>
    <!-- row -->
