@@ -56,7 +56,7 @@ Ihr bekommt:
 
 ### 6. Hosting
 
-* [df.eu](https://www.df.eu/de/webhosting/my-home-plus/)
+* [df.eu](http://www.df.eu/kwk/347935/)
 * [uberspace.de](https://uberspace.de/)
 * [hetzner](https://www.hetzner.de/hosting/produkte_webspace/level1)
 * [all-inkl](http://all-inkl.com/webhosting/uebersicht/)
