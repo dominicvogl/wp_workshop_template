@@ -10,12 +10,15 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
   * CSS
 
 ### 1. Dazugehörige Dokumente
-* **Die Agenda & Keynote** [Dokumente öffnen](https://www.dropbox.com/sh/ok5ngb8ut4kalfl/AABWhF_YYdcJMmhsrsRw1mf3a?dl=0)
-* Cheatsheets / Helferlein [Cheatsheets Website](http:www.webdesign-cheatsheets.com/index.html)
+
+#### Workshopdaten
+* **Allgemeine Dokumente und Daten für die Teilnehmer:** [Dokumente öffnen](https://www.dropbox.com/sh/ok5ngb8ut4kalfl/AABWhF_YYdcJMmhsrsRw1mf3a?dl=0)
+* Workshop Übungsdaten: [GIT Repository](https://github.com/dvcccc/wp_workshop_practice)
+* Wordpress Starter Template: [GIT Repository](https://github.com/dvcccc/wp_workshop_template/tree/starter-template)
 * Das fertige Wordpress Template [herunterladen](git@github.com:dominicvogl/wp_workshop_template.git)
-* Allgemeine Dokumente und Daten für die Teilnehmer: [Dokumente öffnen](https://www.dropbox.com/sh/0st5j2rgq3tfh7k/AAAOn2GOFXmse7F3MQnrqlxMa?dl=0)
-* Die Workshop Übungsdaten: [Github Repository](https://github.com/dvcccc/wp_workshop_practice)
-* Wordpress Starter Template: [Repository Branch](https://github.com/dvcccc/wp_workshop_template/tree/starter-template)
+
+#### Helferlein & Quellen
+* Cheatsheets / Helferlein [Cheatsheets Website](http:www.webdesign-cheatsheets.com/index.html)
 * CSS in 4 Minuten erklärt [jgthms.com](http://jgthms.com/web-design-in-4-minutes/)
 * [Wordpress Demo](http://wpschulung.cat-ia.de/)
 
@@ -62,5 +65,5 @@ Ihr bekommt:
 * [all-inkl](http://all-inkl.com/webhosting/uebersicht/)
 
 ### 7. Lokale Testumgebungen
-* [MAMP](https://www.mamp.info/de/)
-* [xampp](https://www.apachefriends.org/de/index.html)
+* [Xampp](https://www.apachefriends.org/de/index.html) (Windows & Mac)
+* [MAMP](https://www.mamp.info/de/) (Mac)
