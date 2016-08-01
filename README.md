@@ -41,7 +41,7 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 * CSS Selektoren die jeder Frontend Entwickler kennen muss: [code.tutsplus.com](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
 ##### Wordpress
-* Wordpress Codex: [codex.wordlress.org](https://codex.wordpress.org/)
+* Wordpress Codex: [codex.wordpress.org](https://codex.wordpress.org/)
 * WPLift: [wplift.com](http://wplift.com/)
 * Dr. Web: [drweb.de](http://www.drweb.de/magazin/category/wordpress/)
 * Smashing Magazine: [smashingmagazine.com](http://www.smashingmagazine.com/category/wordpress/)
