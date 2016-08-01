@@ -18,7 +18,7 @@ add_theme_support('post-thumbnails');
  * Füge eine neue Bildergröße hinzu, welche gerendert werden soll
  */
 
-add_image_size('header-image', 1500, 550, true);
+add_image_size('header-image', 800, 350, true);
 
 
 /**
