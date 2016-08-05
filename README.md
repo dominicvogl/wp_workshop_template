@@ -22,6 +22,14 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 * CSS in 4 Minuten erklärt [jgthms.com](http://jgthms.com/web-design-in-4-minutes/)
 * Wordpress Codex: [Erklärung von Kernfunktionen und viele weitere Infos](https://codex.wordpress.org/)
 * [Wordpress Demo](http://wpschulung.cat-ia.de/)
+* Wordpress Template Hierarchie [Datei herunterladen](https://developer.wordpress.org/files/2014/10/template-hierarchy.png)
+* Wordpress Datum / Zeitformate [wordpress.org](https://codex.wordpress.org/Formatting_Date_and_Time)
+
+
+#### Online lernen
+* [Codeschool](https://www.codeschool.com/)
+* [Codeacademy](https://www.codecademy.com/)
+
 
 ### 2. Verwendete Plugins
 
