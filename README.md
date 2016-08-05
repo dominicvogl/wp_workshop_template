@@ -20,6 +20,7 @@ Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 #### Helferlein & Quellen
 * Cheatsheets / Helferlein [Cheatsheets Website](http:www.webdesign-cheatsheets.com/index.html)
 * CSS in 4 Minuten erklärt [jgthms.com](http://jgthms.com/web-design-in-4-minutes/)
+* Wordpress Codex: [Erklärung von Kernfunktionen und viele weitere Infos](https://codex.wordpress.org/)
 * [Wordpress Demo](http://wpschulung.cat-ia.de/)
 
 ### 2. Verwendete Plugins
