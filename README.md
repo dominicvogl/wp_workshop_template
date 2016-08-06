@@ -1,6 +1,15 @@
 # Wordpress Workshop
 Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 
+## Update 06.08.2016
+Ihr findet nun euere Arbeitsdaten hier zum herunterladen:
+[Link zu Arbeitsdaten](https://www.dropbox.com/sh/ok5ngb8ut4kalfl/AABWhF_YYdcJMmhsrsRw1mf3a?dl=0)
+
+Darin sind folgende Dinge enthalten:
+* euere Datenbank mit Posts, Seiten, Wordpress Einstellungen, usw.
+* euer Wordpress Template, welches ihr selbst integriert habt
+* Wordpress Core
+
 ## Inhaltsverzeichnis
 1. Dazugehörige Dokumente
 2. Verwendete Plugins
