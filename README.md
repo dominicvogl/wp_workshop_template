@@ -10,6 +10,9 @@ Darin sind folgende Dinge enthalten:
 * euer Wordpress Template, welches ihr selbst integriert habt
 * Wordpress Core
 
+Wenn ihr noch Fragen habt oder bei etwas Hilfe braucht, meldet euch bitte einfach bei mir:
+* **[Kontakt](http://www.vogl.photography/kontakt/)**
+
 ## Inhaltsverzeichnis
 1. Dazugehörige Dokumente
 2. Verwendete Plugins
