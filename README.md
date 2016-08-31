@@ -1,8 +1,12 @@
 # Wordpress Workshop
 Wordpress Theme für den Wordpress Workshop an der BS2 in Regensburg
 
+## Update 31.08.2016
+Die Arbeitsdaten des zweiten Kurses sind hier zu finden:
+[Link zu Arbeitsdaten](https://www.dropbox.com/sh/ok5ngb8ut4kalfl/AABWhF_YYdcJMmhsrsRw1mf3a?dl=0)
+
 ## Update 06.08.2016
-Ihr findet nun euere Arbeitsdaten hier zum herunterladen:
+Die Arbeitsdaten des ersten Kurses sind hier zu finden:
 [Link zu Arbeitsdaten](https://www.dropbox.com/sh/ok5ngb8ut4kalfl/AABWhF_YYdcJMmhsrsRw1mf3a?dl=0)
 
 Darin sind folgende Dinge enthalten:
@@ -13,7 +17,7 @@ Darin sind folgende Dinge enthalten:
 Wenn ihr noch Fragen habt oder bei etwas Hilfe braucht, meldet euch bitte einfach bei mir:
 * **[Kontakt](http://www.vogl.photography/kontakt/)**
 
-## Inhaltsverzeichnis
+# Inhaltsverzeichnis
 1. Dazugehörige Dokumente
 2. Verwendete Plugins
 3. Über den Autor
